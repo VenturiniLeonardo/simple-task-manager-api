@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="TaskManager.Api/TaskManager.Api.csproj" />
+  <Project Path="TaskManager.Tests/TaskManager.Tests.csproj" />
+</Solution>

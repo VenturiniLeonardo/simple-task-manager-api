@@ -1,0 +1,40 @@
+@TaskManager.Api_HostAddress = http://localhost:5000
+@TaskId = 1
+
+GET {{TaskManager.Api_HostAddress}}/tasks
+Accept: application/json
+
+###
+
+POST {{TaskManager.Api_HostAddress}}/tasks
+Content-Type: application/json
+
+{
+  "title": "Nuova Task",
+  "description": "Descrizione di prova"
+}
+
+###
+
+GET {{TaskManager.Api_HostAddress}}/tasks/{{TaskId}}
+Accept: application/json
+
+###
+
+PUT {{TaskManager.Api_HostAddress}}/tasks/{{TaskId}}
+Content-Type: application/json
+
+{
+  "title": "Task aggiornata",
+  "description": "Nuova descrizione"
+}
+
+###
+
+PATCH {{TaskManager.Api_HostAddress}}/tasks/{{TaskId}}/complete
+
+###
+
+DELETE {{TaskManager.Api_HostAddress}}/tasks/{{TaskId}}
+
+###

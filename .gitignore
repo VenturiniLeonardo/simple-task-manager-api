@@ -1,0 +1,28 @@
+## Build and IDE output
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+.idea/
+.vscode/
+
+## SQLite databases and sidecar files
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+
+## Local review notes and superseded code
+/REPORT_CORREZIONI.md
+/REPORT_VERIFICA.md
+/TaskManager.Api/Program_old.md
+
+## Test and publish output
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+publish/
