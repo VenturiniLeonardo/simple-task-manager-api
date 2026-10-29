@@ -35,7 +35,7 @@ dotnet run --no-launch-profile -- --urls http://localhost:5000
 Keep that terminal running. From a second PowerShell terminal, call the API:
 
 ```powershell
-Invoke-RestMethod -Method Get -Uri http://localhost:5000/tasks | ConvertTo-Json -AsArray
+(Invoke-WebRequest -Method Get -Uri http://localhost:5000/tasks).Content
 ```
 
 A fresh database returns `[]`. Create a task and retrieve it:
